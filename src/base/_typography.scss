@@ -1,0 +1,51 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+html{
+    font-size:18px;
+}
+
+body{
+    scroll-behavior: smooth;
+    min-height:100vh;
+    background-color:$Cream;
+    line-height: 1.2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img{
+    display:block;
+    width:100%;
+    height:100%;
+}
+
+h1{
+    font-weight: 700;
+    color:$Very-dark-blue;
+    margin:.5rem 0;
+    font-size:2rem;
+}
+p{
+    font-weight: 500;
+    font-size:1rem;
+
+}
+
+h2{
+    color:$Dark-cyan;
+}
+
+button{
+    color:$White;
+    background-color:$Dark-cyan;
+}
+
+p{
+    color:$Dark-grayish-blue;
+}

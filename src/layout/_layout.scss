@@ -1,0 +1,112 @@
+.card{
+    margin:0 auto;
+    margin:1.2rem 1rem;
+    border-radius: .5rem;
+    background-color:$White;
+    overflow:hidden;
+    display: flex;
+    flex-direction: column;
+    max-width:450px;
+    box-shadow:1px 2px 4px 4px rgba(182, 180, 180, 0.1);
+    .card_img {
+        img{
+            background-size:cover;
+            background-position: center center;
+            
+        }
+    }
+    .card_details{
+        padding: 2rem;
+        .tag{
+            font-size:1rem;
+            text-transform: uppercase;
+            font-weight: 500;
+            letter-spacing: .2rem;
+        }
+        .pricing{
+            margin-top:2rem;
+            .price{
+                margin-bottom:1.5rem;
+                display:flex;
+                align-items: center;
+                justify-content: space-between;
+                max-width:195px;
+                h2{
+                    font-size:2.1rem;
+                }
+                p{
+                    font-size:.8rem;
+                    text-decoration: line-through;
+                }
+            }
+            button{
+                display:flex;;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                padding:.9rem 0;
+                cursor:pointer;
+                border-radius: .6rem;
+                border:none;
+                font-size:.9rem;
+                transition: .4s ease;
+                img{
+                    width:.9rem;
+                    margin-right: .8rem;;
+                }
+                &:hover{
+                    background-color:$Very-dark-blue;
+                }
+            }
+        }
+    }
+    
+}
+
+@media screen and(min-width:32.4em) {
+    .card{
+        flex-direction: row;
+        max-width: 600px;
+        margin:0;
+        .card_img{
+            background-image: url('./images/image-product-desktop.jpg');
+            background-size:cover;
+            background-position:center;
+            width:60rem;
+            height: inherit;
+            img{
+                display:none;
+            }
+            
+        }
+        .card_details{
+            padding:1.5rem;
+            .pricing {
+                margin-top: 1rem;
+                
+                .price {
+                    h2 {
+                        font-size: 2rem;
+                    }
+                    
+                    p {
+                        font-size: .7rem;
+                    }
+                }
+                
+            }
+            .tag{
+                font-size:.8rem;
+                line-height:1.5rem;
+            }
+            h1{
+                font-size:1.7rem;
+            }
+            .text{
+                font-size:1rem;
+                line-height:1.3;
+            }
+        }
+        
+    }
+}
